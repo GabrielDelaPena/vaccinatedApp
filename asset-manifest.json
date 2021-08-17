@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vaccinatedApp/static/css/main.eca973ca.chunk.css",
+    "main.js": "/vaccinatedApp/static/js/main.6317d68b.chunk.js",
+    "main.js.map": "/vaccinatedApp/static/js/main.6317d68b.chunk.js.map",
+    "runtime-main.js": "/vaccinatedApp/static/js/runtime-main.20e4c145.js",
+    "runtime-main.js.map": "/vaccinatedApp/static/js/runtime-main.20e4c145.js.map",
+    "static/js/2.4eeaf7e0.chunk.js": "/vaccinatedApp/static/js/2.4eeaf7e0.chunk.js",
+    "static/js/2.4eeaf7e0.chunk.js.map": "/vaccinatedApp/static/js/2.4eeaf7e0.chunk.js.map",
+    "static/js/3.384eda76.chunk.js": "/vaccinatedApp/static/js/3.384eda76.chunk.js",
+    "static/js/3.384eda76.chunk.js.map": "/vaccinatedApp/static/js/3.384eda76.chunk.js.map",
+    "index.html": "/vaccinatedApp/index.html",
+    "static/css/main.eca973ca.chunk.css.map": "/vaccinatedApp/static/css/main.eca973ca.chunk.css.map",
+    "static/js/2.4eeaf7e0.chunk.js.LICENSE.txt": "/vaccinatedApp/static/js/2.4eeaf7e0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20e4c145.js",
+    "static/js/2.4eeaf7e0.chunk.js",
+    "static/css/main.eca973ca.chunk.css",
+    "static/js/main.6317d68b.chunk.js"
+  ]
+}

@@ -14,7 +14,7 @@ const AddList = () => {
         setIsVaccinated(e.currentTarget.checked)
     }
 
-    const onSubmit = async (e) => {
+    const onSubmit = (e) => {
         e.preventDefault()
         onAdd({name: name, isVaccinated: isVaccinated})
         setName('')

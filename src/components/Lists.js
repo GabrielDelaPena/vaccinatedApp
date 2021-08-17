@@ -5,14 +5,14 @@ import { ListContext } from './ListContext'
 
 const Lists = () => {
 
-    const [lists, setLists] = useContext(ListContext)
+    const { lists } = useContext(ListContext)
 
     return (
         <>
             <div>
                 <h3>Lists</h3>
                 {lists.map(list => (
-                    <Link to={`/list/${list.id}`} key={list.id} className="lists">{list.name}</Link>
+                    <Link to={`/list/${list.name}`} key={list.id} className="lists">{list.name}</Link>
                 ))}
             </div>
             <div>

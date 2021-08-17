@@ -17,7 +17,7 @@ nav {
 
 .the_lists_info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 

@@ -1,37 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
+import { ListContext } from './ListContext'
 
 
 const List = () => {
 
-    const [list, setList] = useState([])
-    const { id } = useParams()
-
-    useEffect(() => {
-        fetchData()
-    }, [])
-
-    const fetchData = async () => {
-        const response = await fetch(`http://localhost:8000/lists/${id}`)
-        const data = await response.json()
-        setList(data)
-    }
-
-    const deleteData = async () => {
-        const res = await fetch(`http://localhost:8000/lists/${id}`, {
-            method: 'DELETE'
-        })
-        window.location.replace('/lists')
-    }
+    const { lists, onDelete } = useContext(ListContext)
+    const { name } = useParams()
 
     return (
         <div>
             <h3>Information</h3>
-            <div className="the_lists_info">
-                <p>Name: {list.name}</p>
-                <p>Status: <span className={list.isVaccinated ? 'green' : 'red'}>{list.isVaccinated ? 'Vaccinated' : 'Not Vaccinated'}</span></p>
-                <button onClick={deleteData}>Delete</button>
-            </div>
+            {lists.filter(list => list.name === name).map((list) => (
+                <div key={list.id}>
+                    <p>Name: {list.name}</p>
+                    <p>Status: <span className={list.isVaccinated ? 'green' : 'red'}>{list.isVaccinated ? 'Vaccinated' : 'Not Vaccinated'}</span></p>
+                    <button onClick={() => onDelete(list.id)}>Delete</button>
+                </div>
+            ))}
         </div>
     )
 }

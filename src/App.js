@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
+
   return (
     <Router>
       <div className="App">
@@ -16,7 +17,7 @@ function App() {
             <Nav />
             <Route path='/' exact component={Home} />
             <Route path='/lists' exact component={Lists} />
-            <Route path='/list/:id' component={List} />
+            <Route path='/list/:name' component={List}/>
           </ListProvider>
         </Switch>
       </div>

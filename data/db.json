@@ -1,0 +1,29 @@
+{
+  "lists": [
+    {
+      "name": "Shaira Dela Peña",
+      "isVaccinated": true,
+      "id": 1
+    },
+    {
+      "name": "Gabriel Dela Peña",
+      "isVaccinated": false,
+      "id": 2
+    },
+    {
+      "name": "Patrick Dela Peña",
+      "isVaccinated": false,
+      "id": 3
+    },
+    {
+      "name": "Shirlmies Balat",
+      "isVaccinated": true,
+      "id": 4
+    },
+    {
+      "name": "Maximo Dela Peña",
+      "isVaccinated": false,
+      "id": 5
+    }
+  ]
+}
